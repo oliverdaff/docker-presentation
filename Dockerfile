@@ -13,6 +13,8 @@ RUN npm install -g grunt-cli
 RUN npm install
 RUN sed -i "s/port: port/port: port,\n\t\t\t\t\thostname: \'\'/g" Gruntfile.js
 
+RUN grunt uglify cssmin
+
 # Install wetty
 RUN git clone https://github.com/krishnasrinivas/wetty
 WORKDIR /opt/presentation/wetty
