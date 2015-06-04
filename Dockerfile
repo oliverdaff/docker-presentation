@@ -28,6 +28,6 @@ ADD slides /opt/presentation/slides/
 
 WORKDIR /opt/presentation
 
-EXPOSE 8000
+EXPOSE 8000 35729
 
 CMD [ "grunt", "serve" ]
